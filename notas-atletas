@@ -15,15 +15,32 @@ let atletas = [
    nome: "Bruno Castro",
    notas: [10, 10, 10, 9, 9.5]
  }
-];                                            
-function Media(notas){                   //Função da média de notas, recebe a matriz de notas
+];      
+function organizarGeral(atletas){             //organiza todas as notas em ordem crescente
+atletas.forEach(atleta){
+atleta.notas.sort((a, b) a - b);
+};
+};
+function Media(notas){                         //Função da média de notas, recebe a matriz de notas
 let notasValidas = 0;
-notas.sort((a, b) => a-b);                //organiza me ordem crescente
-for (let i = 0; i < notas.length; i++){      //executa o comando enquanto i for menor que o tamanho do array
+for (let i = 0; i < notas.length; i++){        //executa o comando enquanto i for menor que o tamanho do array
 if ((i !== 0) && (i !== (notas.length - 1))){
-notasValidas = notasValidas + notas[i];  //eliminar maior e menor notas e soma os demais em uma variável
+notasValidas = notasValidas + notas[i];        //elimina a maior e a menor nota (primeira e a última do array)
+}                                              //e soma os demais em uma variável
 }
-}
-return (notasValidas/(notas.length-2))}              //retorna o valor da média das notas somadas sobre o número de notas somadas
+let media = (notasValidas/(notas.length-2));   //retorna o valor da média das notas somadas sobre o número de notas somadas
+return media;
+}             
+function inserirChaveDeMedia(atletas){
+atletas.forEach(functio(atleta){
 
-//ordenar e exibir na tela
+atleta.media = media
+})
+}
+function exibir(atletas){
+altetas.forEach(function(atleta){
+atleta.nome;
+atleta.notas.sort((a, b) => a-b);
+
+})
+}
