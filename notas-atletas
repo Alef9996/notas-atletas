@@ -15,9 +15,7 @@ let atletas = [
    nome: "Bruno Castro",
    notas: [10, 10, 10, 9, 9.5]
  }
-];
-                                               
-                                              
+];                                            
 function Media(notas){                   //Função da média de notas, recebe a matriz de notas
 let notasValidas = 0;
 notas.sort((a, b) => a-b);                //organiza me ordem crescente
