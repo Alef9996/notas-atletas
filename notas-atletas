@@ -31,8 +31,10 @@ return media;
 }
 function exibir(atletas){
 atletas.forEach(function(atleta){
-console.log(atleta.nome);
-console.log(atleta.notas);
-console.log(Media(atleta.notas));
+console.log(`Atleta: ${atleta.nome}
+Notas: ${atleta.notas}
+Média Válida: ${Media(atleta.notas)}`)
 })
 }
+
+exibir(atletas)
