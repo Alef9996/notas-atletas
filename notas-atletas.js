@@ -37,5 +37,5 @@ let atletas = [
    })
    }
    
-   exibir(atletas)
+   exibir(atletas)  //esta chamada convoca uma função de exibição, exibir(), para executar todos os console.log do array de objetos.
    
